@@ -8,7 +8,8 @@ export const options = {
     duration: '15s'
 }
 export default function () {
-    http.get('https://test.k6.io')
+    http.get('http://test.k6.io');
     sleep(1);
-}
+};
+
 

@@ -11,7 +11,7 @@ export const options ={
     ]
 }
 export default function(){
-    const res = http.get('https://mercadolibre.com.ar');
+    const res = http.get('http://test.k6.io');
     check(res, {'status was 200':(r) => r.status == 200});// es una asersion
     sleep(1)
 }
